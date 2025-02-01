@@ -4,9 +4,10 @@
 
 ### 1️⃣ Run Elasticsearch in a Docker Container
 ```sh
-docker run --name elasticsearch_container -d -p 9200:9200 -p 9300:9300 \
-  -e "discovery.type=single-node" \
-  -e "ES_JAVA_OPTS=-Xms512m -Xmx512m" \
+docker run --name elasticsearch_container -d -p 9200:9200 -p 9300:9300 
+  -e "discovery.type=single-node" 
+  -e "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+  -e "xpack.security.enabled=false" 
   docker.elastic.co/elasticsearch/elasticsearch:8.5.1
 ```
 

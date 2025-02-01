@@ -1,0 +1,63 @@
+[
+    { "index": { "_index": "training_programs", "_id": 1 }},
+    {
+      "id": 1,
+      "name": "Deep Learning with TensorFlow",
+      "category": "Machine Learning",
+      "trainer": "Dr. John Smith",
+      "skills_covered": ["Neural Networks", "CNN", "RNN", "TensorFlow"],
+      "duration_weeks": 6,
+      "price_usd": 499.99,
+      "available_slots": 20,
+      "is_online": true
+    },
+    { "index": { "_index": "training_programs", "_id": 2 }},
+    {
+      "id": 2,
+      "name": "Big Data & Apache Spark",
+      "category": "Data Engineering",
+      "trainer": "Jane Doe",
+      "skills_covered": ["Spark", "Hadoop", "Kafka", "Data Pipelines"],
+      "duration_weeks": 8,
+      "price_usd": 599.99,
+      "available_slots": 15,
+      "is_online": false
+    },
+    { "index": { "_index": "training_programs", "_id": 3 }},
+    {
+      "id": 3,
+      "name": "MLOps & Model Deployment",
+      "category": "DevOps",
+      "trainer": "Mike Johnson",
+      "skills_covered": ["CI/CD", "Docker", "Kubernetes", "FastAPI"],
+      "duration_weeks": 4,
+      "price_usd": 399.99,
+      "available_slots": 10,
+      "is_online": true
+    },
+    { "index": { "_index": "training_programs", "_id": 4 }},
+    {
+      "id": 4,
+      "name": "Computer Vision for ML Engineers",
+      "category": "Computer Vision",
+      "trainer": "Sarah Lee",
+      "skills_covered": ["YOLO", "OpenCV", "Image Processing", "Object Detection"],
+      "duration_weeks": 5,
+      "price_usd": 449.99,
+      "available_slots": 12,
+      "is_online": true
+    },
+    { "index": { "_index": "training_programs", "_id": 5 }},
+    {
+      "id": 5,
+      "name": "NLP with Transformers",
+      "category": "Natural Language Processing",
+      "trainer": "Kevin Brown",
+      "skills_covered": ["BERT", "GPT", "Tokenization", "Hugging Face"],
+      "duration_weeks": 7,
+      "price_usd": 549.99,
+      "available_slots": 18,
+      "is_online": false
+    }
+  ]
+  

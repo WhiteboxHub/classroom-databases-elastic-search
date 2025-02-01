@@ -11,6 +11,7 @@ docker run --name elasticsearch_container -d -p 9200:9200 -p 9300:9300
   docker.elastic.co/elasticsearch/elasticsearch:8.5.1
 ```
 
+
 ### 2️⃣ Stop and Remove Elasticsearch Container
 ```sh
 docker stop elasticsearch_container

@@ -4,6 +4,9 @@
 
 ### 1️⃣ Run Elasticsearch in a Docker Container
 ```sh
+git clone git@github.com:WhiteboxHub/classroom-databases-elastic-search.git
+cd classroom-databases-elastic-search
+
 docker run --name elasticsearch_container -d -p 9200:9200 -p 9300:9300 \
   -e "discovery.type=single-node" \
   -e "ES_JAVA_OPTS=-Xms512m -Xmx512m" \

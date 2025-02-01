@@ -67,6 +67,70 @@ Content-Type: application/json
 
 ### 2️⃣ **Postman**
 - Open **Postman**.
+- Create the Index
+Set method to `Get` .
+- URL:
+```sh
+http://localhost:9200/training_programs
+```
+Body (JSON):
+```sh
+{
+    "settings": {
+      "number_of_shards": 1,
+      "number_of_replicas": 0
+    },
+    "mappings": {
+      "properties": {
+        "id": { "type": "integer" },
+        "name": { "type": "text" },
+        "category": { "type": "keyword" },
+        "trainer": { "type": "text" },
+        "skills_covered": { "type": "keyword" },
+        "duration_weeks": { "type": "integer" },
+        "price_usd": { "type": "double" },
+        "available_slots": { "type": "integer" },
+        "is_online": { "type": "boolean" },
+        "start_date": { "type": "date", "format": "yyyy-MM-dd" },
+        "end_date": { "type": "date", "format": "yyyy-MM-dd" },
+        "rating": { "type": "double" },
+        "max_students": { "type": "integer" },
+        "description": { "type": "text" }
+      }
+    }
+  }
+  ```
+- Verify Index Creation
+Set method to `GET`.
+- Enter the URL:
+```sh
+URL: http://localhost:9200/_cat/indices?v
+```
+Set method to `POST`
+- Enter the URL:
+```sh
+URL: http://localhost:9200/training_programs/_doc/1
+```
+Body (JSON)
+```sh
+{
+  "id": 1,
+  "name": "Deep Learning with TensorFlow",
+  "category": "Machine Learning",
+  "trainer": "Dr. John Smith",
+  "skills_covered": ["Neural Networks", "CNN", "RNN", "TensorFlow"],
+  "duration_weeks": 6,
+  "price_usd": 499.99,
+  "available_slots": 20,
+  "is_online": true,
+  "start_date": "2025-02-01",
+  "end_date": "2025-03-15",
+  "rating": 4.8,
+  "max_students": 30,
+  "description": "An advanced deep learning course covering CNNs, RNNs, and TensorFlow."
+}
+```
+
 - Create a new request → Set method to `GET`.
 - Enter the URL:
 ```sh
